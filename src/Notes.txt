@@ -1,0 +1,19 @@
+MIME Types (Multi-purpose Internet Mail Extensions)
+---------------------------------------------------
+
+1. Def.: These types are used by browser and server to identify the content
+2. List of MIME types: 
+- text/<doc_type> 			- e.g.: HTML, PDF, etc.
+- image/<image_type> 		- e.g.: jpg, bmp, jpeg, etc.
+- application/<type> 		- e.g.: msword, vnd-ms-excel, etc.
+
+- More can be searched on Google. For any type of application file, there is a MIME type.
+- Default is text/HTML, but for other types - plugins need to be installed.
+
+3. To change MIME type: 
+
+public abstract void ServletResponse.setContentType(String);
+
+(called inside 'Servlet.service()')
+
+4. For images, it is good to use byte-streams, instead of character streams.
